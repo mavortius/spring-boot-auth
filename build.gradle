@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.4.RELEASE'
+		springBootVersion = '1.5.6.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -24,7 +24,9 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile("org.springframework.boot:spring-boot-starter-security")
 	compile("org.springframework.boot:spring-boot-starter-web")
 	compile("org.springframework.boot:spring-boot-starter-data-jpa")
 	compile("org.hsqldb:hsqldb")
+    compile("io.jsonwebtoken:jjwt:0.7.0")
 }
